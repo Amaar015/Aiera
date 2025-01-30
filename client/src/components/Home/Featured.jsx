@@ -6,8 +6,8 @@ import { MdOutlineBathtub } from "react-icons/md";
 const Featured = () => {
   return (
     <div className="categoreis featured">
-      <span>Aiera</span>
-      <h2>Explore Our Categories & Places</h2>
+      <span>Our Properties</span>
+      <h2>Featured Properties</h2>
       <div className="featured-main">
         {house.map((item) => (
           <div className="featured-box">

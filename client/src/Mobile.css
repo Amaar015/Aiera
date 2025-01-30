@@ -23,6 +23,14 @@
   .featured .featured-main {
     flex-wrap: wrap;
   }
+  .agents {
+    padding: 6rem 1rem 3rem 1rem;
+  }
+
+  .agents .agents-main {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -117,7 +125,15 @@
   .getTouch .get-detail {
     width: 100%;
     padding: 2rem 2rem;
-    gap:2rem;
+    gap: 2rem;
+  }
+  .categoreis.testimonial {
+    padding: 3rem 1rem 4rem 1rem;
+    text-align: center;
+  }
+
+  .testimonial-main {
+    padding: 0rem 1rem;
   }
 }
 
@@ -141,7 +157,14 @@
   }
   .get-detail > div p {
     font-size: 10px;
-  } 
+  }
+  .agents .agent-heading {
+    margin-left: 2rem;
+  }
+  
+  .agents .agent-heading h1 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 530px) {
@@ -181,7 +204,6 @@
     flex-direction: column;
     gap: 1rem;
     padding: 2rem 1rem;
-
   }
 }
 
@@ -197,5 +219,12 @@
   }
   .about-detail .heading h1 {
     font-size: 1.5rem;
+  }
+  .agents .agent-heading {
+    margin-left: 0.5rem;
+  }
+  
+  .agents .agent-heading h1 {
+    font-size: 1.8rem;
   }
 }

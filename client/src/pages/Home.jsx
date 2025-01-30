@@ -9,6 +9,8 @@ import Video from "../components/Home/Video";
 import About from "../components/Home/About";
 import GetTouch from "../components/Home/GetTouch";
 import Testonomial from "../components/Home/Testonomial";
+import Agents from "../components/Home/Agents";
+import Blogs from "../components/Home/Blogs";
 const Home = () => {
   return (
     <>
@@ -58,6 +60,8 @@ const Home = () => {
       <About />
       <GetTouch />
       <Testonomial />
+      <Agents />
+      <Blogs />
     </>
   );
 };
