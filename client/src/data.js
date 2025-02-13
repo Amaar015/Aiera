@@ -59,6 +59,186 @@ export const house = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcg4Y51XjQ-zSf87X4nUPTQzsF83eFdZswTg&s",
   },
+  {
+    name: "Sunny Loft Property",
+    property_img:
+      "https://cdn.pixabay.com/photo/2017/01/07/17/48/interior-1961070_1280.jpg",
+    location: "New York",
+    amount: "$300,000",
+    type: "Sale",
+    rooms: "3",
+    washroom: "2",
+    sqft: "1,878",
+    post: "2 Weeks ago",
+    agent_name: "Aijaz Ali",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvq38z5q-ZRjoCWqSz2tBEi0hOOh1hCKqhA&s",
+  },
+  {
+    name: "Sunny Loft Property",
+    property_img:
+      "https://media.istockphoto.com/id/2164630814/photo/warm-and-cozy-autumn-beige-composition-of-living-room-interior-with-green-plants-mock-up.jpg?s=612x612&w=0&k=20&c=2fwY2YMNGeDxOsSsRx09HcYe7pdkoRSd5CaZfXXHYXs=",
+    location: "New York",
+    amount: "$3,050",
+    type: "Rent",
+    rooms: "3",
+    washroom: "2",
+    sqft: "1,878",
+    post: "2 Weeks ago",
+    agent_name: "Aijaz Ali",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvq38z5q-ZRjoCWqSz2tBEi0hOOh1hCKqhA&s",
+  },
+  {
+    name: "Sunny Loft Property",
+    property_img:
+      "https://media.istockphoto.com/id/2160571794/photo/father-and-daughter-spending-quality-time-together.jpg?s=612x612&w=0&k=20&c=8hZPxq4x5cDtkslBhsEj2oh1DpzyokHBtNe9SGbbjck=",
+    location: "New York",
+    amount: "$300",
+    type: "Sale",
+    rooms: "3",
+    washroom: "2",
+    sqft: "1,878",
+    post: "2 Weeks ago",
+    agent_name: "Aijaz Ali",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvq38z5q-ZRjoCWqSz2tBEi0hOOh1hCKqhA&s",
+  },
+  {
+    name: "Sunny Loft Property",
+    property_img:
+      "https://cdn.pixabay.com/photo/2017/07/09/03/19/home-2486092_1280.jpg",
+    location: "New York",
+    amount: "$400",
+    type: "Rent",
+    rooms: "3",
+    washroom: "2",
+    sqft: "1,878",
+    post: "2 Weeks ago",
+    agent_name: "Aijaz Ali",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvq38z5q-ZRjoCWqSz2tBEi0hOOh1hCKqhA&s",
+  },
+  {
+    name: "Sunny Loft Property",
+    property_img:
+      "https://media.istockphoto.com/id/2150319965/photo/home-interior-with-vintage-furniture.jpg?s=612x612&w=0&k=20&c=X_G0MecaeY6xISgEpP2MUJ__dtofnz6AguWbpNprF_I=",
+    location: "New York",
+    amount: "$300,000",
+    type: "Sale",
+    rooms: "3",
+    washroom: "2",
+    sqft: "1,878",
+    post: "2 Weeks ago",
+    agent_name: "Abdullah",
+    image:
+      "https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/avatar/avatar-8.png",
+  },
+  {
+    name: "Sunny Loft Property",
+    property_img:
+      "https://media.istockphoto.com/id/1661475806/photo/family-gathered-at-the-table-at-home.jpg?s=612x612&w=0&k=20&c=PHK6ydohzurnbB7ATY4i4-NeBUDufNGEey4n-WYq0SI=",
+    location: "New York",
+    amount: "$3,050",
+    type: "Rent",
+    rooms: "3",
+    washroom: "2",
+    sqft: "1,878",
+    post: "2 Weeks ago",
+    agent_name: "Abdullah",
+    image:
+      "https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/avatar/avatar-8.png",
+  },
+  {
+    name: "Sunny Loft Property",
+    property_img:
+      "https://media.istockphoto.com/id/1845489647/photo/mom-and-baby-move-in.jpg?s=612x612&w=0&k=20&c=hELRK7nkdAmqFzmO9YAMBalkJeUEkW8eRlBOKUsSRak=",
+    location: "New York",
+    amount: "$300",
+    type: "Sale",
+    rooms: "3",
+    washroom: "2",
+    sqft: "1,878",
+    post: "2 Weeks ago",
+    agent_name: "Abdullah",
+    image:
+      "https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/avatar/avatar-8.png",
+  },
+  {
+    name: "Sunny Loft Property",
+    property_img:
+      "https://media.istockphoto.com/id/1311423416/photo/home-interior-background-with-green-sofa-table-and-decor-in-living-room.jpg?s=612x612&w=0&k=20&c=UhKDMvu4AxuoHkg2DcZSiy0ULIOnQhANfbtYkRTXvho=",
+    location: "Karachi",
+    amount: "$400",
+    type: "Rent",
+    rooms: "3",
+    washroom: "2",
+    sqft: "1,878",
+    post: "2 Weeks ago",
+    agent_name: "Abdullah",
+    image:
+      "https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/avatar/avatar-8.png",
+  },
+  {
+    name: "Sunny Loft Property",
+    property_img:
+      "https://cdn.pixabay.com/photo/2023/12/17/09/47/door-8453898_1280.jpg",
+    location: "Hyderabad",
+    amount: "$400",
+    type: "Rent",
+    rooms: "3",
+    washroom: "2",
+    sqft: "1,878",
+    post: "2 Weeks ago",
+    agent_name: "Batool",
+    image:
+      "https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg",
+  },
+  {
+    name: "Sunny Loft Property",
+    property_img:
+      "https://cdn.pixabay.com/photo/2016/11/22/23/38/apartment-1851201_1280.jpg",
+    location: "Hyderabad",
+    amount: "$400",
+    type: "Rent",
+    rooms: "3",
+    washroom: "2",
+    sqft: "1,878",
+    post: "2 Weeks ago",
+    agent_name: "Batool",
+    image:
+      "https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg",
+  },
+  {
+    name: "Sunny Loft Property",
+    property_img:
+      "https://cdn.pixabay.com/photo/2017/02/24/12/23/apartment-2094718_1280.jpg",
+    location: "Hyderabad",
+    amount: "$400",
+    type: "Rent",
+    rooms: "3",
+    washroom: "2",
+    sqft: "1,878",
+    post: "2 Weeks ago",
+    agent_name: "Batool",
+    image:
+      "https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg",
+  },
+  {
+    name: "Sunny Loft Property",
+    property_img:
+      "https://cdn.pixabay.com/photo/2014/07/10/17/17/bedroom-389254_1280.jpg",
+    location: "Hyderabad",
+    amount: "$400",
+    type: "Rent",
+    rooms: "3",
+    washroom: "2",
+    sqft: "1,878",
+    post: "2 Weeks ago",
+    agent_name: "Batool",
+    image:
+      "https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg",
+  },
 ];
 
 export const testimonial = [
@@ -131,13 +311,32 @@ export const agents = [
   },
   {
     image:
-      "https://cdn.pixabay.com/photo/2024/05/26/11/40/business-8788635_640.jpg",
-    name: "Rameez Ahmed",
+      "https://s.alicdn.com/@sc04/kf/H20890e76cef4457999d683d5fb0b6baay.jpg_720x720q50.jpg",
+    name: "Supply Master",
   },
   {
     image:
       "https://static.vecteezy.com/system/resources/thumbnails/051/258/772/small_2x/professional-black-workplace-businessman-working-in-the-office-free-photo.jpg",
     name: "M. Kashif",
+  },
+  {
+    image:
+      "https://image.made-in-china.com/202f0j00EbdqLetsnocI/Women-s-3-Piece-Office-Lady-Business-Suit-Set-Slim-Fit-Solid-Blazer-Vest-Pant-Set.webp",
+    name: "Sara Khan",
+  },
+  {
+    image: "https://d1fufvy4xao6k9.cloudfront.net/looks/460/3piece-navy.jpg",
+    name: "Aijaz Ali",
+  },
+  {
+    image:
+      "https://img.joomcdn.net/be7d3947b87c301802f55b7d02860b64af174df8_original.jpeg",
+    name: "Bare Log",
+  },
+  {
+    image:
+      "https://www.mrmunro.co.uk/wp-content/uploads/2023/10/evm-lookbook-Digby-Martez-Brown-Cavani-6-Test-Theme-980x800.jpg",
+    name: "Waseem Ali",
   },
 ];
 
@@ -177,5 +376,118 @@ export const blogs = [
       "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
     image:
       "https://images.pexels.com/photos/313691/pexels-photo-313691.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+
+  // 2
+  {
+    created_by: "Amaar",
+    data: "MAR. 21, 2024",
+    title: "New Home Sales Picked Up in December",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image:
+      "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    created_by: "Amaar",
+    data: "MAR. 23, 2024",
+    title: "New Home Sales Picked Up in December",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image:
+      "https://media.istockphoto.com/id/1436951314/photo/business-woman-talking-to-her-colleagues-during-a-meeting-in-a-boardroom.jpg?b=1&s=612x612&w=0&k=20&c=HAPUokbOMBOn0-Eb8daYFGeOKP5xGVUXFFI3R19L7gg=",
+  },
+  {
+    created_by: "Amaar",
+    data: "MAR. 23, 2024",
+    title: "New Home Sales Picked Up in December",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image:
+      "https://images.pexels.com/photos/7648470/pexels-photo-7648470.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    created_by: "Amaar",
+    data: "MAR. 23, 2024",
+    title: "New Home Sales Picked Up in December",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image:
+      "https://cdn.pixabay.com/photo/2018/03/10/12/00/teamwork-3213924_1280.jpg",
+  },
+  // 3
+  {
+    created_by: "Rameez",
+    data: "JAN. 05, 2025",
+    title: "New Home Sales Picked Up in December",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image:
+      "https://media.istockphoto.com/id/2187918275/photo/two-businesswomen-talking-in-office-space.jpg?s=612x612&w=0&k=20&c=6JqHnzuzsAcCQbsew5eDI9bFPe73ZDzFbhvGwtYiHyU=",
+  },
+  {
+    created_by: "Rameez",
+    data: "JAN. 05, 2025",
+    title: "New Home Sales Picked Up in December",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image:
+      "https://media.istockphoto.com/id/2152979172/photo/a-financial-advisor-advises-a-multiracial-couple-at-home.jpg?s=612x612&w=0&k=20&c=7R_Wz44c9fWGYHP5qVQmmIJ3upSxue6q0UYcTLubnRs=",
+  },
+  {
+    created_by: "Rameez",
+    data: "JAN. 05, 2025",
+    title: "New Home Sales Picked Up in December",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image:
+      "https://media.istockphoto.com/id/980932080/photo/young-team-discussing-project-in-modern-office.jpg?s=612x612&w=0&k=20&c=d5bkVuyHy_vykRnulreX7cCBFeu_moOPIVInlo_IFbU=",
+  },
+  {
+    created_by: "Rameez",
+    data: "JAN. 05, 2025",
+    title: "New Home Sales Picked Up in December",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image:
+      "https://images.pexels.com/photos/313691/pexels-photo-313691.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+
+  // 2
+  {
+    created_by: "Aijaz",
+    data: "JAN. 14, 2025",
+    title: "New Home Sales Picked Up in December",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image:
+      "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    created_by: "Aijaz",
+    data: "JAN. 14, 2025",
+    title: "New Home Sales Picked Up in December",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image:
+      "https://media.istockphoto.com/id/1436951314/photo/business-woman-talking-to-her-colleagues-during-a-meeting-in-a-boardroom.jpg?b=1&s=612x612&w=0&k=20&c=HAPUokbOMBOn0-Eb8daYFGeOKP5xGVUXFFI3R19L7gg=",
+  },
+  {
+    created_by: "Aijaz",
+    data: "JAN. 14, 2025",
+    title: "New Home Sales Picked Up in December",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image:
+      "https://images.pexels.com/photos/7648470/pexels-photo-7648470.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    created_by: "Aijaz",
+    data: "JAN. 14, 2025",
+    title: "New Home Sales Picked Up in December",
+    description:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    image:
+      "https://cdn.pixabay.com/photo/2018/03/10/12/00/teamwork-3213924_1280.jpg",
   },
 ];

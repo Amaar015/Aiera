@@ -11,12 +11,20 @@ import GetTouch from "../components/Home/GetTouch";
 import Testonomial from "../components/Home/Testonomial";
 import Agents from "../components/Home/Agents";
 import Blogs from "../components/Home/Blogs";
+import FooterTop from "../components/Home/FooterTop";
+import { motion } from "framer-motion";
 const Home = () => {
   return (
     <>
       <div className="page-main">
         <Navbar />
-        <div className="text">
+        <motion.div
+          initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.5 }}
+          className="text"
+        >
           <h1>
             Let Your Home Be <br /> <span>Unique & Stylist</span>{" "}
           </h1>
@@ -51,7 +59,7 @@ const Home = () => {
               fontWeight={"bold"}
             />
           </div>
-        </div>
+        </motion.div>
         <Searchbar />
       </div>
       <Categories />
@@ -62,6 +70,7 @@ const Home = () => {
       <Testonomial />
       <Agents />
       <Blogs />
+      <FooterTop />
     </>
   );
 };

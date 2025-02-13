@@ -20,6 +20,32 @@ const Searchbar = () => {
       value: "sell",
     },
   ]);
+  const [timeLimit, setTimeLimit] = useState([
+    {
+      name: "100$-300$",
+      value: "100$-300$",
+    },
+    {
+      name: "200$-500$",
+      value: "200$-500$",
+    },
+    {
+      name: "600$-900$",
+      value: "600$-900$",
+    },
+    {
+      name: "1000$-1300$",
+      value: "1100$-1300$",
+    },
+    {
+      name: "1200$-1500$",
+      value: "1200$-1500$",
+    },
+    {
+      name: "1600$-1900$",
+      value: "1600$-1900$",
+    },
+  ]);
   return (
     <div className="search-bar">
       {/* 1 */}
@@ -83,13 +109,13 @@ const Searchbar = () => {
           }}
         >
           {selectedItemIndex != null
-            ? itemList[selectedItemIndex].name
-            : "Residential"}
+            ? timeLimit[selectedItemIndex].name
+            : "1000$-2000$"}
         </div>
         {/* drop down item */}
         {isPriceVisible ? (
           <div className="items-holder">
-            {itemList.map((item, index) => (
+            {timeLimit.map((item, index) => (
               <div
                 key={item.value}
                 className="dropdown-item"

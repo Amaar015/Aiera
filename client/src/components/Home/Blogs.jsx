@@ -1,5 +1,8 @@
 import React from "react";
 import { blogs } from "../../data";
+ 
+const firstFourItems = blogs.slice(0, 4);
+
 
 const Blogs = () => {
   return (
@@ -7,7 +10,7 @@ const Blogs = () => {
       <span>Our Blog</span>
       <h2>Recent Blog</h2>
       <div className="h-blog-main">
-        {blogs.map((blog) => (
+        {firstFourItems.map((blog) => (
           <div className="main-blog-cards">
             <img src={blog.image} alt={blog.title} />
             <div className="blog-cards-details">

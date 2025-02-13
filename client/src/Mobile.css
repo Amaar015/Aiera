@@ -8,6 +8,11 @@
   .featured .featured-main {
     padding: 2rem 1rem;
   }
+
+  .h-blogs .h-blog-main {
+    padding: 3rem 1rem 2rem 1rem;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -30,6 +35,13 @@
   .agents .agents-main {
     flex-wrap: wrap;
     gap: 1rem;
+  }
+  .footer-main .footer-main-top {
+    flex-wrap: wrap;
+  }
+  .footer-main-top .footer-detail {
+    flex: 1; /* Each div gets an equal width */
+    max-width: 250px; /* For better responsiveness */
   }
 }
 
@@ -97,8 +109,23 @@
   .about-main .about-image {
     display: none;
   }
+  .footer-top {
+    flex-wrap: wrap;
+  }
+  .footer-top .footer-top-image {
+    flex: 1 1 calc(100% / 3); /* Show 3 images per row */
+    max-width: calc(100% / 3);
+  }
 }
-
+@media (max-width: 840px) {
+  .contact-us .contact-main {
+    flex-direction: column;
+  }
+  .contact-box:nth-of-type(2) {
+    height: 60vh !important;
+    min-height: 60vh;
+  }
+}
 @media (max-width: 780px) {
   .categoreis {
     padding: 16rem 0rem 5rem 0rem;
@@ -135,6 +162,12 @@
   .testimonial-main {
     padding: 0rem 1rem;
   }
+  .h-blogs {
+    padding: 3rem 1rem 4rem 1rem;
+  }
+  .blog-cards-details h2 {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 650px) {
@@ -161,9 +194,15 @@
   .agents .agent-heading {
     margin-left: 2rem;
   }
-  
+
   .agents .agent-heading h1 {
     font-size: 2.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .footer-top .footer-top-image {
+    flex: 1 1 calc(100% / 2); /* Show 2 images per row */
+    max-width: calc(100% / 2);
   }
 }
 
@@ -205,6 +244,15 @@
     gap: 1rem;
     padding: 2rem 1rem;
   }
+  .h-blogs {
+    padding: 3rem 1rem 4rem 1rem;
+  }
+  .footer-main .footer-main-bottom {
+    font-size: 10px;
+  }
+  .contact-us {
+    padding: 6rem 1rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -223,8 +271,32 @@
   .agents .agent-heading {
     margin-left: 0.5rem;
   }
-  
+
   .agents .agent-heading h1 {
     font-size: 1.8rem;
+  }
+  .main-blog-cards .blog-cards-details {
+    gap: 0.5rem;
+  }
+  .blog-cards-details .blog-created {
+    flex-wrap: wrap;
+  }
+  .footer-top .footer-top-image {
+    flex: 1 1 100%; /* Show 1 image per row */
+    max-width: 100%;
+  }
+  .about-us p {
+    font-size: 14px;
+  }
+  .about-us h4 {
+    font-size: 2.5rem;
+  }
+
+  .Agent-main {
+    padding: 6rem 1rem 6rem 1rem;
+  }
+  .Agent-main .agent-card {
+    margin-top: 1rem;
+    width: 250px;
   }
 }

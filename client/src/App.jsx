@@ -1,7 +1,7 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import AboutUs from "./pages/AboutUs";
 import Properties from "./pages/Properties";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Top from "./components/Top";
 import "./App.css";
 import "./Mobile.css";
+import Agent from "./pages/Agent";
 
 const Layout = () => {
   return (
@@ -32,18 +33,22 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />,
+        element: <AboutUs />,
       },
       {
-        path: "/property",
+        path: "/properties",
         element: <Properties />,
+      },
+      {
+        path: "/agents",
+        element: <Agent />,
       },
       {
         path: "/blog",
         element: <Blog />,
       },
       {
-        path: "/contact",
+        path: "/contact-us",
         element: <Contact />,
       },
     ],

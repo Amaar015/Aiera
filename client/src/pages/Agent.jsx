@@ -1,18 +1,25 @@
 import React from "react";
-import { agents } from "../../data";
+import Navbar from "../components/Navbar";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { agents } from "../data";
 import { FaTwitter, FaFacebookF, FaGoogle, FaInstagram } from "react-icons/fa6";
-   
-const firstFourItems = agents.slice(0, 4);
 
-const Agents = () => {
+const Agent = () => {
   return (
-    <div className="agents">
-      <div className="agent-heading">
-        <span>Meet our Agents</span>
-        <h1>Our Agents</h1>
+    <>
+      <div className="page-main abouts">
+        <Navbar />
+        <div className="about-us">
+          <p>
+            Home
+            <MdKeyboardArrowRight className="i" /> Our Agents
+            <MdKeyboardArrowRight className="i" />
+          </p>
+          <h4>Our Agents</h4>
+        </div>
       </div>
-      <div className="agents-main">
-        {firstFourItems.map((agent) => (
+      <div className="Agent-main">
+        {agents.map((agent) => (
           <div className="agent-card">
             <img src={agent.image} alt="" />
             <div className="agent-detail">
@@ -39,8 +46,8 @@ const Agents = () => {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 
-export default Agents;
+export default Agent;

@@ -2,6 +2,8 @@ import React from "react";
 import { FaMap } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
 import { FaConnectdevelop } from "react-icons/fa";
+import { motion } from "framer-motion";
+
 const Top = () => {
   return (
     <div className="main">
@@ -36,7 +38,7 @@ const Top = () => {
             <p>
               <span>Connect</span> with us
             </p>
-            <span>Call Us Now 24/7 Customer Support</span>
+            <span>Facebook Twitter Dribbble</span>
           </div>
         </div>
       </div>

@@ -3,13 +3,26 @@ import { house } from "./../../data.js";
 import { MdLocationOn } from "react-icons/md";
 import { IoBedOutline } from "react-icons/io5";
 import { MdOutlineBathtub } from "react-icons/md";
+import { motion } from "framer-motion";
 const Featured = () => {
+  const firstFourItems = house.slice(0, 4);
   return (
     <div className="categoreis featured">
-      <span>Our Properties</span>
-      <h2>Featured Properties</h2>
+      <motion.span
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.5 }}
+      >
+        Our Properties
+      </motion.span>
+      <motion.h2
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.5 }}>Featured Properties</motion.h2>
       <div className="featured-main">
-        {house.map((item) => (
+        {firstFourItems.map((item) => (
           <div className="featured-box">
             <div className="featured-image">
               <img src={item.property_img} alt="" />

@@ -10,6 +10,7 @@ const Buttons = ({
   icon,
   fontWeight,
   exteaClass,
+  widths,
 }) => {
   const buttonStyle = {
     padding: paddings,
@@ -25,6 +26,7 @@ const Buttons = ({
     transition: "all 0.3s linear",
     cursor: "pointer",
     zIndex: 1,
+    width: widths,
   };
 
   return (
