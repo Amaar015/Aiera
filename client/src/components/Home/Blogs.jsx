@@ -1,15 +1,33 @@
 import React from "react";
 import { blogs } from "../../data";
- 
+import { motion } from "framer-motion";
 const firstFourItems = blogs.slice(0, 4);
-
 
 const Blogs = () => {
   return (
     <div className="categoreis h-blogs">
-      <span>Our Blog</span>
-      <h2>Recent Blog</h2>
-      <div className="h-blog-main">
+      <motion.span
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.5 }}
+      >
+        Our Blog
+      </motion.span>
+      <motion.h2
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.5 }}
+      >
+        Recent Blog
+      </motion.h2>
+      <motion.div 
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: false, amount: 0.5 }}
+      className="h-blog-main">
         {firstFourItems.map((blog) => (
           <div className="main-blog-cards">
             <img src={blog.image} alt={blog.title} />
@@ -24,7 +42,7 @@ const Blogs = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

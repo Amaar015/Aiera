@@ -4,6 +4,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { blogs } from "../data";
 import { usePagination } from "../hooks/pagination";
 import Pagination from "@mui/material/Pagination";
+import { motion } from "framer-motion";
 
 const Blog = () => {
   const [
@@ -17,14 +18,20 @@ const Blog = () => {
     <>
       <div className="page-main abouts">
         <Navbar />
-        <div className="about-us">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.5 }}
+          className="about-us"
+        >
           <p>
             Home
             <MdKeyboardArrowRight className="i" /> Our Blogs
             <MdKeyboardArrowRight className="i" />
           </p>
           <h4>Our Blogs</h4>
-        </div>
+        </motion.div>
       </div>
       <div className="Agent-main blog-main-page">
         {(() => {

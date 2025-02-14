@@ -9,6 +9,7 @@ import { IoBedOutline } from "react-icons/io5";
 import { MdOutlineBathtub } from "react-icons/md";
 import { usePagination } from "../hooks/pagination";
 import Pagination from "@mui/material/Pagination";
+import { motion } from "framer-motion";
 
 const Properties = () => {
   const [
@@ -22,7 +23,13 @@ const Properties = () => {
     <>
       <div className="page-main abouts">
         <Navbar />
-        <div className="text">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.5 }}
+          className="text"
+        >
           <div className="about-us">
             <p>
               Home
@@ -49,11 +56,16 @@ const Properties = () => {
               fontWeight={"bold"}
             />
           </div>
-        </div>
+        </motion.div>
         <Searchbar />
       </div>
       {/* featured cards  */}
-      <div className="Agent-main">
+      <motion.div 
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.5 }}
+      className="Agent-main">
         {(() => {
           const displayPosts = [];
           for (let i = startPageIndex; i <= endPageIndex; i++) {
@@ -119,7 +131,7 @@ const Properties = () => {
           count={totalPages}
           onChange={(event, value) => displayPage(value)}
         />
-      </div>
+      </motion.div>
     </>
   );
 };

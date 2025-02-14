@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import video from "./../../images/house.mp4";
 import { FaPlay } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 const Video = () => {
   const videoRef = useRef(null); // Reference to the video element
 
@@ -65,7 +65,13 @@ const Video = () => {
 
   return (
     <div className="video-container">
-      <div className="overlay">
+      <motion.div
+        initial={{ y: 150, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.5 }}
+        className="overlay"
+      >
         <h2>Modern House Video</h2>
         <p>
           Far far away, behind the word mountains, far from the countries
@@ -74,7 +80,7 @@ const Video = () => {
         <button onClick={handlePlayFullscreen}>
           <FaPlay className="playicon" />
         </button>
-      </div>
+      </motion.div>
       <video
         ref={videoRef}
         src={video} // Replace with your video file

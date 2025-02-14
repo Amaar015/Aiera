@@ -1,8 +1,14 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
+import {motion} from 'framer-motion'
 const FooterTop = () => {
   return (
-    <div className="footer-top">
+    <motion.div 
+    initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.5 }}
+    className="footer-top">
       <div className="footer-top-image">
         <img
           src="https://images.pexels.com/photos/5570226/pexels-photo-5570226.jpeg?auto=compress&cs=tinysrgb&w=400"
@@ -57,7 +63,7 @@ const FooterTop = () => {
         <FaSearch/>
         </i>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

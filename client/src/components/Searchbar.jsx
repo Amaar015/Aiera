@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { FaLocationDot } from "react-icons/fa6";
+import { motion } from "framer-motion";
+
 const Searchbar = () => {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
   const [isPriceVisible, setIsPriceVisible] = useState(false);
@@ -47,7 +49,9 @@ const Searchbar = () => {
     },
   ]);
   return (
-    <div className="search-bar">
+    <motion.div
+      className="search-bar"
+    >
       {/* 1 */}
       <div className="search-box">
         <h5>ENTER KEYWORD</h5>
@@ -136,7 +140,7 @@ const Searchbar = () => {
       <div className="search-box">
         <button>Search</button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

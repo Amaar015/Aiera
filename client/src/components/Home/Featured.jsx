@@ -6,6 +6,26 @@ import { MdOutlineBathtub } from "react-icons/md";
 import { motion } from "framer-motion";
 const Featured = () => {
   const firstFourItems = house.slice(0, 4);
+  const cardVariants = {
+    initial: { opacity: 0, y: 50, scale: 0.9 },
+    animate: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: { duration: 1, staggerChildren: 0.2 },
+    },
+  };
+
+  const childVariants = {
+    initial: { opacity: 0, y: 20, scale: 0.8, rotate: -5 },
+    animate: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      rotate: 0,
+      transition: { duration: 1 },
+    },
+  };
   return (
     <div className="categoreis featured">
       <motion.span
@@ -17,13 +37,25 @@ const Featured = () => {
         Our Properties
       </motion.span>
       <motion.h2
-              initial={{ y: 100, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              viewport={{ once: false, amount: 0.5 }}>Featured Properties</motion.h2>
-      <div className="featured-main">
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.5 }}
+      >
+        Featured Properties
+      </motion.h2>
+      <motion.div
+        initial="initial"
+        whileInView="animate"
+        variants={cardVariants}
+        className="featured-main"
+      >
         {firstFourItems.map((item) => (
-          <div className="featured-box">
+          <motion.div
+            variants={childVariants}
+            whileTap={{ scale: 0.95 }}
+            className="featured-box"
+          >
             <div className="featured-image">
               <img src={item.property_img} alt="" />
               <span className="price">{item.amount}</span>
@@ -61,9 +93,9 @@ const Featured = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

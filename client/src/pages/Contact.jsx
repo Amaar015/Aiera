@@ -3,22 +3,35 @@ import Navbar from "../components/Navbar";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Buttons from "../components/Buttons";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <>
       <div className="page-main abouts">
         <Navbar />
-        <div className="about-us">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.5 }}
+          className="about-us"
+        >
           <p>
             Home
             <MdKeyboardArrowRight className="i" /> Contact
             <MdKeyboardArrowRight className="i" />
           </p>
           <h4>Contact us</h4>
-        </div>
+        </motion.div>
       </div>
       <div className="contact-us">
-        <div className="contact-main">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.5 }}
+          className="contact-main"
+        >
           <div className="contact-box">
             <h2 className="contact-heading">Contact us</h2>
             <p>We're open for any suggestion or just to have a chat</p>
@@ -88,13 +101,12 @@ const Contact = () => {
             <iframe
               title="Google Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.966873096902!2d-74.00594118459386!3d40.71277597933027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3161f5a3e7%3A0x4d3e1e3c5a1f6e76!2s198%20West%2021th%20Street%2C%20Suite%20721%2C%20New%20York%2C%20NY%2010016%2C%20USA!5e0!3m2!1sen!2s!4v1618355084474!5m2!1sen!2s"
-              
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
             ></iframe>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

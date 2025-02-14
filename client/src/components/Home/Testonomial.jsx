@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { testimonial } from "../../data";
+import { motion } from "framer-motion";
 
 const Testimonial = () => {
   var settings = {
@@ -40,9 +41,27 @@ const Testimonial = () => {
 
   return (
     <div className="categoreis testimonial">
-      <span>Testimonial</span>
-      <h2>Clients We Help</h2>
-      <div className="testimonial-main">
+      <motion.span
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.5 }}
+      >
+        Testimonial
+      </motion.span>
+      <motion.h2
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.5 }}
+      >Clients We Help
+      </motion.h2>
+      <motion.div 
+         initial={{ y: 100, opacity: 0 }}
+         whileInView={{ y: 0, opacity: 1 }}
+         transition={{ duration: 1, ease: "easeOut" }}
+         viewport={{ once: false, amount: 0.5 }}
+      className="testimonial-main">
         <Slider {...settings}>
           {testimonial.map((data) => (
             <div className="testimonial-card" key={data.id}>
@@ -57,7 +76,7 @@ const Testimonial = () => {
             </div>
           ))}
         </Slider>
-      </div>
+      </motion.div>
     </div>
   );
 };

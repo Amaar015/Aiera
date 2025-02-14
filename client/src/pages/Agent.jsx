@@ -3,22 +3,35 @@ import Navbar from "../components/Navbar";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { agents } from "../data";
 import { FaTwitter, FaFacebookF, FaGoogle, FaInstagram } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const Agent = () => {
   return (
     <>
       <div className="page-main abouts">
         <Navbar />
-        <div className="about-us">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.5 }}
+          className="about-us"
+        >
           <p>
             Home
             <MdKeyboardArrowRight className="i" /> Our Agents
             <MdKeyboardArrowRight className="i" />
           </p>
           <h4>Our Agents</h4>
-        </div>
+        </motion.div>
       </div>
-      <div className="Agent-main">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.5 }}
+        className="Agent-main"
+      >
         {agents.map((agent) => (
           <div className="agent-card">
             <img src={agent.image} alt="" />
@@ -45,7 +58,7 @@ const Agent = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </>
   );
 };

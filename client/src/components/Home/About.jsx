@@ -3,6 +3,7 @@ import about_1 from "./../../images/lampt.jpg";
 import about_2 from "./../../images/house-1.jpg";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+import { motion } from "framer-motion";
 const About = () => {
   const [counterOn, setCounterOn] = useState(false);
   return (
@@ -12,13 +13,41 @@ const About = () => {
     >
       <div className="categoreis about">
         <div className="about-main">
-          <div className="about-image">
+          <motion.div
+            initial={{ y: 70, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.5 }}
+            className="about-image"
+          >
             <img src={about_1} alt="" />
-          </div>
-          <div className="about-detail">
-            <div className="heading">
-              <span>About Us</span>
-              <h1>Oakberry A Real Estate Company</h1>
+          </motion.div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.5 }}
+            className="about-detail"
+          >
+            <div
+              className="heading"
+            >
+              <span
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.5 }}
+              >
+                About Us
+              </span>
+              <h1
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.5 }}
+              >
+                Oakberry A Real Estate Company
+              </h1>
             </div>
             <p>
               Far far away, behind the word mountains, far from the countries
@@ -88,7 +117,7 @@ const About = () => {
             <div className="detail-image">
               <img src={about_2} alt="" />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </ScrollTrigger>
